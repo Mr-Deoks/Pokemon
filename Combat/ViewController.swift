@@ -769,8 +769,15 @@ class ViewController: UIViewController {
             squirtle.health = 220
             squirtle.image = UIImage(named: "squirtle.png")
             squirtle.attacks = squirtleAttacks
-        enemyPokemons.append(squirtle)
         pokemons.append(squirtle)
+        
+        let enemySquirtle = WaterPokemon()
+            enemySquirtle.name = "Squirtle"
+            enemySquirtle.maxHealth = 230
+            enemySquirtle.health = 230
+            enemySquirtle.image = UIImage(named: "squirtle.png")
+            enemySquirtle.attacks = squirtleAttacks
+        enemyPokemons.append(enemySquirtle)
         
         let charmander = FirePokemon()
             charmander.name = "Charmander"
