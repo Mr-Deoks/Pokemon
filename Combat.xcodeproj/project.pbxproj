@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		840F2A011AAA1D9600D85C44 /* squir1.png in Resources */ = {isa = PBXBuildFile; fileRef = 840F2A001AAA1D9600D85C44 /* squir1.png */; };
+		8424FD901AA8B16300A323F5 /* pika1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8424FD8F1AA8B16300A323F5 /* pika1.png */; };
+		8424FD921AA8B19E00A323F5 /* char1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8424FD911AA8B19E00A323F5 /* char1.png */; };
+		8424FD941AA8B7C100A323F5 /* bulbasaur.png in Resources */ = {isa = PBXBuildFile; fileRef = 8424FD931AA8B7C100A323F5 /* bulbasaur.png */; };
+		844EDA0F1AA79BF8006D8643 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844EDA0E1AA79BF8006D8643 /* AppDelegate.swift */; };
+		844EDA111AA79BF8006D8643 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844EDA101AA79BF8006D8643 /* ViewController.swift */; };
+		844EDA141AA79BF8006D8643 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844EDA121AA79BF8006D8643 /* Main.storyboard */; };
+		844EDA161AA79BF8006D8643 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844EDA151AA79BF8006D8643 /* Images.xcassets */; };
+		844EDA191AA79BF8006D8643 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844EDA171AA79BF8006D8643 /* LaunchScreen.xib */; };
+		844EDA251AA79BF8006D8643 /* CombatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844EDA241AA79BF8006D8643 /* CombatTests.swift */; };
+		844EDA2F1AA79D6B006D8643 /* pikachu.png in Resources */ = {isa = PBXBuildFile; fileRef = 844EDA2E1AA79D6B006D8643 /* pikachu.png */; };
+		844EDA311AA79DAE006D8643 /* squirtle.png in Resources */ = {isa = PBXBuildFile; fileRef = 844EDA301AA79DAE006D8643 /* squirtle.png */; };
+		844EDA331AA7A197006D8643 /* charmander.png in Resources */ = {isa = PBXBuildFile; fileRef = 844EDA321AA7A197006D8643 /* charmander.png */; };
+		844EDA351AA7A602006D8643 /* Attacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844EDA341AA7A602006D8643 /* Attacks.swift */; };
+		84536E141AA7A87100ED5CF3 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84536E131AA7A87100ED5CF3 /* Pokemon.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		844EDA1F1AA79BF8006D8643 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 844EDA011AA79BF8006D8643 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 844EDA081AA79BF8006D8643;
+			remoteInfo = Combat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		840F2A001AAA1D9600D85C44 /* squir1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = squir1.png; sourceTree = SOURCE_ROOT; };
+		8424FD8F1AA8B16300A323F5 /* pika1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pika1.png; sourceTree = SOURCE_ROOT; };
+		8424FD911AA8B19E00A323F5 /* char1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = char1.png; sourceTree = SOURCE_ROOT; };
+		8424FD931AA8B7C100A323F5 /* bulbasaur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bulbasaur.png; sourceTree = SOURCE_ROOT; };
+		844EDA091AA79BF8006D8643 /* Combat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Combat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		844EDA0D1AA79BF8006D8643 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		844EDA0E1AA79BF8006D8643 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		844EDA101AA79BF8006D8643 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		844EDA131AA79BF8006D8643 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		844EDA151AA79BF8006D8643 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		844EDA181AA79BF8006D8643 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		844EDA1E1AA79BF8006D8643 /* CombatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CombatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		844EDA231AA79BF8006D8643 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		844EDA241AA79BF8006D8643 /* CombatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombatTests.swift; sourceTree = "<group>"; };
+		844EDA2E1AA79D6B006D8643 /* pikachu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pikachu.png; sourceTree = SOURCE_ROOT; };
+		844EDA301AA79DAE006D8643 /* squirtle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = squirtle.png; sourceTree = SOURCE_ROOT; };
+		844EDA321AA7A197006D8643 /* charmander.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = charmander.png; sourceTree = SOURCE_ROOT; };
+		844EDA341AA7A602006D8643 /* Attacks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Attacks.swift; sourceTree = "<group>"; };
+		84536E131AA7A87100ED5CF3 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		844EDA061AA79BF8006D8643 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		844EDA1B1AA79BF8006D8643 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		844EDA001AA79BF8006D8643 = {
+			isa = PBXGroup;
+			children = (
+				844EDA0B1AA79BF8006D8643 /* Combat */,
+				844EDA211AA79BF8006D8643 /* CombatTests */,
+				844EDA0A1AA79BF8006D8643 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		844EDA0A1AA79BF8006D8643 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				844EDA091AA79BF8006D8643 /* Combat.app */,
+				844EDA1E1AA79BF8006D8643 /* CombatTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		844EDA0B1AA79BF8006D8643 /* Combat */ = {
+			isa = PBXGroup;
+			children = (
+				844EDA0E1AA79BF8006D8643 /* AppDelegate.swift */,
+				844EDA101AA79BF8006D8643 /* ViewController.swift */,
+				844EDA341AA7A602006D8643 /* Attacks.swift */,
+				84536E131AA7A87100ED5CF3 /* Pokemon.swift */,
+				844EDA121AA79BF8006D8643 /* Main.storyboard */,
+				844EDA151AA79BF8006D8643 /* Images.xcassets */,
+				844EDA171AA79BF8006D8643 /* LaunchScreen.xib */,
+				844EDA0C1AA79BF8006D8643 /* Supporting Files */,
+			);
+			path = Combat;
+			sourceTree = "<group>";
+		};
+		844EDA0C1AA79BF8006D8643 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				840F2A001AAA1D9600D85C44 /* squir1.png */,
+				8424FD931AA8B7C100A323F5 /* bulbasaur.png */,
+				8424FD911AA8B19E00A323F5 /* char1.png */,
+				8424FD8F1AA8B16300A323F5 /* pika1.png */,
+				844EDA321AA7A197006D8643 /* charmander.png */,
+				844EDA301AA79DAE006D8643 /* squirtle.png */,
+				844EDA2E1AA79D6B006D8643 /* pikachu.png */,
+				844EDA0D1AA79BF8006D8643 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		844EDA211AA79BF8006D8643 /* CombatTests */ = {
+			isa = PBXGroup;
+			children = (
+				844EDA241AA79BF8006D8643 /* CombatTests.swift */,
+				844EDA221AA79BF8006D8643 /* Supporting Files */,
+			);
+			path = CombatTests;
+			sourceTree = "<group>";
+		};
+		844EDA221AA79BF8006D8643 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				844EDA231AA79BF8006D8643 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		844EDA081AA79BF8006D8643 /* Combat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 844EDA281AA79BF8006D8643 /* Build configuration list for PBXNativeTarget "Combat" */;
+			buildPhases = (
+				844EDA051AA79BF8006D8643 /* Sources */,
+				844EDA061AA79BF8006D8643 /* Frameworks */,
+				844EDA071AA79BF8006D8643 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Combat;
+			productName = Combat;
+			productReference = 844EDA091AA79BF8006D8643 /* Combat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		844EDA1D1AA79BF8006D8643 /* CombatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 844EDA2B1AA79BF8006D8643 /* Build configuration list for PBXNativeTarget "CombatTests" */;
+			buildPhases = (
+				844EDA1A1AA79BF8006D8643 /* Sources */,
+				844EDA1B1AA79BF8006D8643 /* Frameworks */,
+				844EDA1C1AA79BF8006D8643 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				844EDA201AA79BF8006D8643 /* PBXTargetDependency */,
+			);
+			name = CombatTests;
+			productName = CombatTests;
+			productReference = 844EDA1E1AA79BF8006D8643 /* CombatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		844EDA011AA79BF8006D8643 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Denis Aganin";
+				TargetAttributes = {
+					844EDA081AA79BF8006D8643 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					844EDA1D1AA79BF8006D8643 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 844EDA081AA79BF8006D8643;
+					};
+				};
+			};
+			buildConfigurationList = 844EDA041AA79BF8006D8643 /* Build configuration list for PBXProject "Combat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 844EDA001AA79BF8006D8643;
+			productRefGroup = 844EDA0A1AA79BF8006D8643 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				844EDA081AA79BF8006D8643 /* Combat */,
+				844EDA1D1AA79BF8006D8643 /* CombatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		844EDA071AA79BF8006D8643 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844EDA141AA79BF8006D8643 /* Main.storyboard in Resources */,
+				844EDA311AA79DAE006D8643 /* squirtle.png in Resources */,
+				840F2A011AAA1D9600D85C44 /* squir1.png in Resources */,
+				844EDA191AA79BF8006D8643 /* LaunchScreen.xib in Resources */,
+				8424FD921AA8B19E00A323F5 /* char1.png in Resources */,
+				844EDA161AA79BF8006D8643 /* Images.xcassets in Resources */,
+				8424FD901AA8B16300A323F5 /* pika1.png in Resources */,
+				844EDA331AA7A197006D8643 /* charmander.png in Resources */,
+				8424FD941AA8B7C100A323F5 /* bulbasaur.png in Resources */,
+				844EDA2F1AA79D6B006D8643 /* pikachu.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		844EDA1C1AA79BF8006D8643 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		844EDA051AA79BF8006D8643 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844EDA111AA79BF8006D8643 /* ViewController.swift in Sources */,
+				84536E141AA7A87100ED5CF3 /* Pokemon.swift in Sources */,
+				844EDA351AA7A602006D8643 /* Attacks.swift in Sources */,
+				844EDA0F1AA79BF8006D8643 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		844EDA1A1AA79BF8006D8643 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844EDA251AA79BF8006D8643 /* CombatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		844EDA201AA79BF8006D8643 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 844EDA081AA79BF8006D8643 /* Combat */;
+			targetProxy = 844EDA1F1AA79BF8006D8643 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		844EDA121AA79BF8006D8643 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				844EDA131AA79BF8006D8643 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		844EDA171AA79BF8006D8643 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				844EDA181AA79BF8006D8643 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		844EDA261AA79BF8006D8643 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		844EDA271AA79BF8006D8643 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		844EDA291AA79BF8006D8643 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Combat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		844EDA2A1AA79BF8006D8643 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Combat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		844EDA2C1AA79BF8006D8643 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CombatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Combat.app/Combat";
+			};
+			name = Debug;
+		};
+		844EDA2D1AA79BF8006D8643 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CombatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Combat.app/Combat";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		844EDA041AA79BF8006D8643 /* Build configuration list for PBXProject "Combat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				844EDA261AA79BF8006D8643 /* Debug */,
+				844EDA271AA79BF8006D8643 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		844EDA281AA79BF8006D8643 /* Build configuration list for PBXNativeTarget "Combat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				844EDA291AA79BF8006D8643 /* Debug */,
+				844EDA2A1AA79BF8006D8643 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		844EDA2B1AA79BF8006D8643 /* Build configuration list for PBXNativeTarget "CombatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				844EDA2C1AA79BF8006D8643 /* Debug */,
+				844EDA2D1AA79BF8006D8643 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 844EDA011AA79BF8006D8643 /* Project object */;
+}
