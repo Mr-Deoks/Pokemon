@@ -157,7 +157,14 @@ class ViewController: UIViewController {
         enemyPokemon.image = chosenEnemyPokemon.image
         consoleLabel.text = "Go Bulbasaur!"
     }
-    
+    func enemyChooseCharmander() {
+        chosenEnemyPokemon = enemyPokemons[2]
+        enemyPokNameLabel.text = chosenEnemyPokemon.name
+        enemyHealthLabel.text = String(chosenEnemyPokemon.health)
+        enemyPokemon.image = chosenEnemyPokemon.image
+        consoleLabel.text = "Go Charmandericus! Burn them!"
+    }
+
     
     
     
@@ -200,7 +207,7 @@ class ViewController: UIViewController {
     
     @IBAction func pikachuSummon(sender: AnyObject) {
         if chosenPokemon.name != pokemons[0].name {
-            if pokemons[0].health >= 0 {
+            if pokemons[0].health > 0 {
             choosePikachu()
             pikachuButtonOutlet.enabled = false
             charmanderButtonOutlet.enabled = true
@@ -350,15 +357,36 @@ class ViewController: UIViewController {
                     enemyRazorLeaves()
                 default:
                     enemyTackle()
-            }
+                }
+            } else if chosenEnemyPokemon.name == enemyPokemons[2].name {
+                    
+                    switch randomAttack {
+                    case 0:
+                        enemyScratch()
+                    case 1:
+                        enemyBite()
+                    case 2:
+                        enemyFlamethrower()
+                    case 3:
+                        enemyOverheat()
+                    default:
+                        enemyScratch()
+                    }
+                }
         }
-    }
-        } else {
+        
+    
+    } else {
             if count >= 2 {
             consoleLabel.text = "\(chosenEnemyPokemon.name) fainted."
+                if enemyPokemons[1].health <= 0 && enemyPokemons[3].health > 0 {
             enemyChooseBulbasaur()
             stopTimer()
-                
+                }
+                else if enemyPokemons[1].health <= 0 && enemyPokemons[3].health <= 0 {
+                    enemyChooseCharmander()
+                    stopTimer()
+                }
                 }
             }
         attackReady()
@@ -377,7 +405,7 @@ class ViewController: UIViewController {
             neatChangePokScreen()
         }
         
-        if enemyPokemons[3].health < 0 {
+        if enemyPokemons[2].health < 0 {
             performSegueWithIdentifier("Home", sender: nil)
         }
     }
@@ -581,6 +609,18 @@ class ViewController: UIViewController {
         }
         yourHealthLabel.text = String(chosenPokemon.health)
     }
+    
+    func enemyScratch() {
+        var hitCheck = randomHitNumber()
+        if chosenEnemyPokemon.attacks[0].hitChance >= hitCheck {
+            chosenPokemon.health -= chosenEnemyPokemon.attacks[0].damage
+            consoleLabel.text = "\(self.chosenEnemyPokemon.name) uses \(self.chosenEnemyPokemon.attacks[0].name)! \(self.chosenPokemon.name) looses \(self.chosenEnemyPokemon.attacks[0].damage) HP!"
+        } else {
+            consoleLabel.text = "\(chosenEnemyPokemon.name) uses \(chosenEnemyPokemon.attacks[0].name)! Oops, that's a miss!"
+        }
+        yourHealthLabel.text = String(chosenPokemon.health)
+    }
+
 
     func enemyIronTail() {
         var hitCheck = randomHitNumber()
@@ -682,6 +722,46 @@ class ViewController: UIViewController {
         }
         yourHealthLabel.text = String(chosenPokemon.health)
     }
+    
+    func enemyFlamethrower() {
+        var hitCheck = randomHitNumber()
+        if chosenEnemyPokemon.attacks[2].hitChance >= hitCheck {
+            if chosenPokemon.type == "Fire" || chosenPokemon.type == "Water" {
+                chosenPokemon.health -= chosenEnemyPokemon.attacks[2].damage / 2
+                consoleLabel.text = "\(self.chosenEnemyPokemon.name) uses \(self.chosenEnemyPokemon.attacks[2].name)! \(self.chosenPokemon.name) looses \(self.chosenEnemyPokemon.attacks[2].damage / 2) HP! Not very effective..."
+            } else if chosenPokemon.type == "Grass" {
+                chosenPokemon.health -= chosenEnemyPokemon.attacks[2].damage * 2
+                consoleLabel.text = "\(self.chosenEnemyPokemon.name) uses \(self.chosenEnemyPokemon.attacks[2].name)! \(self.chosenPokemon.name) looses \(self.chosenEnemyPokemon.attacks[2].damage * 2) HP! Super Effective!"
+            } else {
+                chosenPokemon.health -= chosenEnemyPokemon.attacks[2].damage
+                consoleLabel.text = "\(self.chosenEnemyPokemon.name) uses \(self.chosenEnemyPokemon.attacks[2].name)! \(self.chosenPokemon.name) looses \(self.chosenEnemyPokemon.attacks[2].damage) HP!"
+            }
+        } else {
+            consoleLabel.text = "\(chosenEnemyPokemon.name) uses \(chosenEnemyPokemon.attacks[2].name)! Oops, that's a miss!"
+        }
+        yourHealthLabel.text = String(chosenPokemon.health)
+    }
+    
+    func enemyOverheat() {
+        var hitCheck = randomHitNumber()
+        if chosenEnemyPokemon.attacks[3].hitChance >= hitCheck {
+            if chosenPokemon.type == "Fire" || chosenPokemon.type == "Water" {
+                chosenPokemon.health -= chosenEnemyPokemon.attacks[3].damage / 2
+                consoleLabel.text = "\(self.chosenEnemyPokemon.name) uses \(self.chosenEnemyPokemon.attacks[3].name)! \(self.chosenPokemon.name) looses \(self.chosenEnemyPokemon.attacks[3].damage / 2) HP! Not very effective..."
+            } else if chosenPokemon.type == "Grass" {
+                chosenPokemon.health -= chosenEnemyPokemon.attacks[3].damage * 2
+                consoleLabel.text = "\(self.chosenEnemyPokemon.name) uses \(self.chosenEnemyPokemon.attacks[3].name)! \(self.chosenPokemon.name) looses \(self.chosenEnemyPokemon.attacks[3].damage * 2) HP! Super Effective!"
+            } else {
+                chosenPokemon.health -= chosenEnemyPokemon.attacks[3].damage
+                consoleLabel.text = "\(self.chosenEnemyPokemon.name) uses \(self.chosenEnemyPokemon.attacks[3].name)! \(self.chosenPokemon.name) looses \(self.chosenEnemyPokemon.attacks[3].damage) HP!"
+            }
+        } else {
+            consoleLabel.text = "\(chosenEnemyPokemon.name) uses \(chosenEnemyPokemon.attacks[3].name)! Oops, that's a miss!"
+        }
+        yourHealthLabel.text = String(chosenPokemon.health)
+    }
+
+
 
     // Defining attacks
     func defineAttacks() {
@@ -785,8 +865,15 @@ class ViewController: UIViewController {
             charmander.health = 210
             charmander.image = UIImage(named: "charmander.png")
             charmander.attacks = charmanderAttacks
-        enemyPokemons.append(charmander)
         pokemons.append(charmander)
+        
+        let enemyCharmander = FirePokemon()
+            enemyCharmander.name = "Charmandericus"
+            enemyCharmander.maxHealth = 280
+            enemyCharmander.health = 280
+            enemyCharmander.image = UIImage(named: "char1.png")
+            enemyCharmander.attacks = charmanderAttacks
+        enemyPokemons.append(enemyCharmander)
         
         let bulbasaur = GrassPokemon()
             bulbasaur.name = "Bulbasaur"
