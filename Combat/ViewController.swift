@@ -131,7 +131,7 @@ class ViewController: UIViewController {
         defineAttacks()
         definePokemons()
         enemyChooseSquirtle()
-        choosePikachu()
+        chooseRandomPokemon()
         pikachuButtonOutlet.enabled = false
 
         
@@ -869,8 +869,8 @@ class ViewController: UIViewController {
         
         let enemyCharmander = FirePokemon()
             enemyCharmander.name = "Charmandericus"
-            enemyCharmander.maxHealth = 280
-            enemyCharmander.health = 280
+            enemyCharmander.maxHealth = 300
+            enemyCharmander.health = 300
             enemyCharmander.image = UIImage(named: "char1.png")
             enemyCharmander.attacks = charmanderAttacks
         enemyPokemons.append(enemyCharmander)
@@ -938,6 +938,20 @@ class ViewController: UIViewController {
         charReserveHP.text = "\(pokemons[2].health) HP"
         pikaReserveHP.text = "\(pokemons[0].health) HP"
         squirtleReserveHP.text = "\(pokemons[1].health) HP"
+    }
+    
+    func chooseRandomPokemon() -> () {
+        var randomPok = Int(arc4random_uniform(4))
+        switch randomPok {
+        case 0:
+            return choosePikachu()
+        case 1:
+            return chooseSquirtle()
+        case 2:
+            return chooseCharmander()
+        default:
+            return chooseCharmander()
+        }
     }
     
     func showAlertWithText(header : String = "Warning", message : String) {
