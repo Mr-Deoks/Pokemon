@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		840442721AB38DD900AD63BF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840442711AB38DD900AD63BF /* AVFoundation.framework */; };
+		840442741AB38E3400AD63BF /* Pokemon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 840442731AB38E3400AD63BF /* Pokemon.mp3 */; };
 		840F2A011AAA1D9600D85C44 /* squir1.png in Resources */ = {isa = PBXBuildFile; fileRef = 840F2A001AAA1D9600D85C44 /* squir1.png */; };
 		8424FD901AA8B16300A323F5 /* pika1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8424FD8F1AA8B16300A323F5 /* pika1.png */; };
 		8424FD921AA8B19E00A323F5 /* char1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8424FD911AA8B19E00A323F5 /* char1.png */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		840442711AB38DD900AD63BF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		840442731AB38E3400AD63BF /* Pokemon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Pokemon.mp3; sourceTree = "<group>"; };
 		840F2A001AAA1D9600D85C44 /* squir1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = squir1.png; sourceTree = SOURCE_ROOT; };
 		8424FD8F1AA8B16300A323F5 /* pika1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pika1.png; sourceTree = SOURCE_ROOT; };
 		8424FD911AA8B19E00A323F5 /* char1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = char1.png; sourceTree = SOURCE_ROOT; };
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				840442721AB38DD900AD63BF /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +82,7 @@
 		844EDA001AA79BF8006D8643 = {
 			isa = PBXGroup;
 			children = (
+				840442711AB38DD900AD63BF /* AVFoundation.framework */,
 				844EDA0B1AA79BF8006D8643 /* Combat */,
 				844EDA211AA79BF8006D8643 /* CombatTests */,
 				844EDA0A1AA79BF8006D8643 /* Products */,
@@ -97,6 +103,7 @@
 			children = (
 				844EDA0E1AA79BF8006D8643 /* AppDelegate.swift */,
 				844EDA101AA79BF8006D8643 /* ViewController.swift */,
+				840442731AB38E3400AD63BF /* Pokemon.mp3 */,
 				844EDA341AA7A602006D8643 /* Attacks.swift */,
 				84536E131AA7A87100ED5CF3 /* Pokemon.swift */,
 				844EDA121AA79BF8006D8643 /* Main.storyboard */,
@@ -229,6 +236,7 @@
 				844EDA331AA7A197006D8643 /* charmander.png in Resources */,
 				8424FD941AA8B7C100A323F5 /* bulbasaur.png in Resources */,
 				844EDA2F1AA79D6B006D8643 /* pikachu.png in Resources */,
+				840442741AB38E3400AD63BF /* Pokemon.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

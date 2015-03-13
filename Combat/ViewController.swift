@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
@@ -26,6 +27,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var pikaReserveHP: UILabel!
     @IBOutlet weak var squirtleReserveHP: UILabel!
 
+    var player: AVAudioPlayer = AVAudioPlayer()
     
     var pokemons: [Pokemon] = []
     var enemyPokemons: [Pokemon] = []
@@ -133,6 +135,14 @@ class ViewController: UIViewController {
         enemyChooseSquirtle()
         chooseRandomPokemon()
         pikachuButtonOutlet.enabled = false
+        
+        let filePath = NSBundle.mainBundle().pathForResource("Pokemon", ofType: "mp3")
+        let fileData = NSData(contentsOfFile: filePath!)
+        var error: NSError? = nil
+        player = AVAudioPlayer(data: fileData, error: &error)
+        player.volume = 0.5
+        player.play()
+
 
         
     }
@@ -406,6 +416,7 @@ class ViewController: UIViewController {
         }
         
         if enemyPokemons[2].health < 0 {
+            player.stop()
             performSegueWithIdentifier("Home", sender: nil)
         }
     }
